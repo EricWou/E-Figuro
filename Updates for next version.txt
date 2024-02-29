@@ -1,0 +1,6 @@
+Updates for new version
+-Change code so that only date is shown for datatables (TimeSheet, Clock)
+-Update Administrator account to be able to view other accounts information (filter by name?)
+-Send email automatically to newly created user account (simple line of code - Nafi)
+-For registration, have datatable that shows users
+-For datatables CRUD, implement what Nafi put in their last video (select entry to update automatically)
