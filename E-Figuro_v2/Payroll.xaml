@@ -1,0 +1,42 @@
+﻿<Window x:Class="E_Figuro.Payroll"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:E_Figuro"
+        mc:Ignorable="d"
+        Title="Payroll" Height="450" Width="800">
+    <Grid>
+        <Rectangle HorizontalAlignment="Center" Height="78" Margin="0,-3,0,0" Stroke="Black" VerticalAlignment="Top" Width="800" RenderTransformOrigin="0.5,0.5" Fill="#FF1E1B3F">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Image Source="/Efiguro_logo.PNG" Margin="9,10,717,358" OpacityMask="#FF221F48" />
+        <Button x:Name="back_button" Content="Go back" HorizontalAlignment="Left" Margin="41,383,0,0" VerticalAlignment="Top" FontSize="16" Width="100" Click="back_button_Click" RenderTransformOrigin="0.5,0.5" FontFamily="Arial" Background="#FF5A81E9" BorderBrush="{x:Null}" Foreground="#FFF7F1F1">
+        </Button>
+        <Label Content="Earnings" HorizontalAlignment="Left" Margin="44,136,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="earnings_label" Content="" HorizontalAlignment="Left" Margin="375,136,0,0" VerticalAlignment="Top" FontSize="16" Background="#FFEAEBF4" Width="141"/>
+        <Label Content="Total Hours" HorizontalAlignment="Left" Margin="44,238,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="hours_label" Content="" HorizontalAlignment="Left" Margin="375,238,0,0" VerticalAlignment="Top" FontSize="16" Background="#FFEAEBF4" Width="141"/>
+        <Label Content="Salary (hourly)" HorizontalAlignment="Left" Margin="44,187,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="salary_label" Content="" HorizontalAlignment="Left" Margin="375,187,0,0" VerticalAlignment="Top" FontSize="16" Background="#FFEAEBF4" Width="141"/>
+        <Label Content="Taxes" HorizontalAlignment="Left" Margin="44,287,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="taxes_label" Content="" HorizontalAlignment="Left" Margin="375,287,0,0" VerticalAlignment="Top" FontSize="16" Background="#FFEAEBF4" Width="141"/>
+        <Label Content="Net Pay" HorizontalAlignment="Left" Margin="44,337,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="netPay_label" Content="" HorizontalAlignment="Left" Margin="375,337,0,0" VerticalAlignment="Top" FontSize="16" Background="#FFEAEBF4" Width="141"/>
+        <Button x:Name="print_button" Content="Print Pay Stub" Margin="645,380,0,0" VerticalAlignment="Top" FontSize="16" HorizontalAlignment="Left" Width="102" Click="print_button_Click"/>
+        <Label Content="$/hour" HorizontalAlignment="Left" Margin="530,187,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="$" HorizontalAlignment="Left" Margin="530,136,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="$" HorizontalAlignment="Left" Margin="530,337,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="$" HorizontalAlignment="Left" Margin="530,287,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="hours" HorizontalAlignment="Left" Margin="530,238,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Payroll Portal" HorizontalAlignment="Left" Margin="100,20,0,0" VerticalAlignment="Top" FontSize="20" Height="43" FontWeight="Bold" Foreground="#FFE1DFF1"/>
+        <Label x:Name="name_label" Content="" HorizontalAlignment="Left" Margin="46,92,0,0" VerticalAlignment="Top" Width="701" FontSize="16" Background="#FF5A81E9" Foreground="#FFF8F5F5" Padding="10,5,5,5"/>
+    </Grid>
+</Window>
